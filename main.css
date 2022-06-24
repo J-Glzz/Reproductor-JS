@@ -1,0 +1,160 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
+:root {
+  --background: #e0e5ec;
+  --gray: #797d7f;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+body{
+  background-image: url("Imagen/BTR.png");
+  background-color: transparent;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.Contenido{
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.Interfaz{
+  width: 300px;
+  height: 550px;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background: #727272;
+  box-shadow: inset 39px 39px 71px #383838,
+  inset -39px -39px 71px #acacac;
+}
+.Reproduciendo{
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.Menu-btn{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #0080ff;
+  box-shadow: inset 19px -19px 32px #003366,
+              inset -19px 19px 32px #00cdff;
+}
+.Menu-btn:active{
+  border-radius: 50%;
+  background: #2e2e2e;
+  box-shadow:  12px -12px 35px #121212,
+               -12px 12px 35px #4a4a4a;
+}
+.btn-tam-small{
+  min-width: 50px;
+  min-height: 50px;
+}
+.player__artist {
+  font-size: 1.2em;
+  font-weight: 500;
+  opacity: 1;
+  margin: 20px 0px 0px 0px;
+}
+.player__song {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  opacity: 1;
+  margin: 0;
+}
+.TituloRepro{
+  font-weight: 600;
+  font-size: 0.8em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.Carátula{
+  width: 150px;
+}
+.ImagenArt{
+  border-radius: 70px;
+  background: linear-gradient(45deg, #0073e6, #0089ff);
+  box-shadow:  19px -19px 32px #003366,
+             -19px 19px 32px #00cdff;
+}
+.LineaRepro{
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin-top: 40px;
+}
+.LineaRepro::-webkit-slider-runnable-track{
+  background-color: #d7dbdd;
+  height: 6px;
+  border-radius: 3px;
+}
+.LineaRepro::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  border-radius: 100%;
+  background-color: #5c87fe;
+  height: 18px;
+  width: 18px;
+  margin-top: -7px;
+}
+.DuracionAudio{
+  margin-top: -30px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 78%;
+  font-size: 10px;
+  font-weight: 600;
+  color: #a1a1a1;
+  letter-spacing: 1px;
+}
+.btn-tam-med{
+  min-height: 70px;
+  min-width: 70px;
+}
+.Controles{
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.blue {
+  background-color: #5c87fe;
+  color: #fff;
+}
+.hide {
+  display: none;
+}
+.volumen{
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+}
+.Pagina, .urlImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
